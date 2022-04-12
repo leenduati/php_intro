@@ -1,0 +1,13 @@
+sudo update-rc.d -f lampp enable //Enable XAMPP
+sudo /etc/init.d/apache2 stop
+
+//when sql service is not starting
+service mysql status 
+service mysql stop
+sudo /opt/lampp/lampp status
+
+//when apache is refusing to start or fails a lot
+sudo /etc/init.d/apache2 stop
+
+//hhtp://locahost is found in /opt/lammp/htdocs
+written as index.php

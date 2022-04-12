@@ -1,0 +1,7 @@
+sudo update-rc.d -f lampp enable //Enable XAMPP
+sudo /etc/init.d/apache2 stop
+
+//when sql service is not starting
+service mysql status 
+service mysql stop
+sudo /opt/lampp/lampp status
