@@ -44,9 +44,69 @@ echo $greetings2;
 //use define
 
 define("NAME", "leenduati", true);
-echo NAmE;
+//add true to make it case insensitive
+echo NAME;
 
 ?>
+
+<!-- Arrays -->
+<!-- 1. Index Arrays -->
+
+<p>
+
+<?php
+
+$people = array('Kevin', "Jeremy", "Sara", 23,444);
+echo $people[3];
+
+// Create arrays using the normal way
+$cars = ["Honda", "Toyota", "Ford"];
+# Add smth to array using
+$cars[3] = "Benz";
+// Add Element to end of arrays using empty indexing; eg.
+
+$cars[] = "BMW";
+echo $cars;
+
+//how many elements in an array
+echo count($cars);
+//print whole array
+print_r($cars);
+#Check the data type in the array by calling var_dump
+var_dump($cars)
+
+?>
+
+</p>
+
+<!-- Associative Arrays; uses key value pairs -->
+<p>
+
+<?php
+$students = array("form 3" => 43, "Jose" => 33, "Portilla" => 45);
+echo $students["Jose"];
+$students["lee"] = 26;
+var_dump($students);
+
+?>
+
+</p>
+
+<p>
+    <!-- Multidimensional arrays; arrays within arrays -->
+<?php
+$body = array(
+    array("Arms", "Hands"),
+    array("Legs", "Knees"),
+    array("Feet", "Toes")
+);
+echo $body[1][1];
+?>
+</p>
+<!-- Loops -->
+
+
+
 
 
 
